@@ -1,0 +1,26 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    position: relative;
+  }
+  
+  .card {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border: 1px solid #ddd;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    transform: translateY(calc(-100% - 10px));
+  }
+  
+  .card:nth-child(2) {
+    transform: translateY(calc(-200% - 20px));
+  }
+  
+  .card:nth-child(3) {
+    transform: translateY(calc(-300% - 30px));
+  }
+  
